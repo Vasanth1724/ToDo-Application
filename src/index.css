@@ -1,0 +1,129 @@
+/* Main container styles */
+main {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Styles */
+main h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+main h1::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Input and button section */
+main div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+main input[type="text"] {
+  flex-grow: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+main input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+main button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: transform 0.2s;
+}
+
+main button:hover {
+  transform: scale(1.2);
+}
+
+/* List items */
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li.item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+main li.item:hover {
+  background-color: #f0f8ff;
+}
+
+/* Checkbox and label */
+main li.item input[type="checkbox"] {
+  margin-right: 0.75rem;
+  transform: scale(1.3);
+}
+
+main li.item label {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+main li.item input[type="checkbox"]:checked + label {
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* Icons */
+main #edit,
+main #delete {
+  margin-left: 0.75rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+main #edit:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+main #delete:hover {
+  color: #dc3545;
+  transform: scale(1.2);
+}
