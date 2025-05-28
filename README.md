@@ -39,7 +39,9 @@ git clone https://github.com/your-username/todo-app.git
 cd todo-app
 
 ### 2. Install dependencies
+```bash
 npm install
 
 ### 3. Run the app locally
+```bash
 npm run dev
